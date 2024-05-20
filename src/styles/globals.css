@@ -16,18 +16,62 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "SatoshiRegular";
+  src: url("../assets/fonts//satoshi/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("../assets/fonts//satoshi/Satoshi-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiMedium";
+  src: url("../assets/fonts//satoshi/Satoshi-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiLight";
+  src: url("../assets/fonts//satoshi/Satoshi-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: url("../assets/fonts//satoshi/Satoshi-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sreg {
+  font-family: 'SatoshiRegular';
+}
+
+.sl {
+  font-family: 'SatoshiLight';
+}
+
+.sm {
+  font-family: 'SatoshiMedium';
+}
+
+.sb {
+  font-family: 'SatoshiBold';
+}
+
+.sd {
+  font-family: 'SatoshiBlack';
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #1C2127;
 }
