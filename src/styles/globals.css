@@ -74,4 +74,5 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #1C2127;
+  font-family: 'SatoshiRegular';
 }

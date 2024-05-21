@@ -10,7 +10,7 @@ import Chart from "../assets/svg/Chart";
 export default function TopInfo() {
   return (
     <>
-      <div className="flex items-center gap-[20px] h-[80px] sreg bg-[#20252B] rounded-[8px] px-[20px]">
+      <div className="flex items-center gap-[20px] h-[80px] sreg bg-[#20252B] border border-[#262932] rounded-[8px] px-[20px]">
         <Image src={Coins} alt="coins"></Image>
         <p className="text-[24px] sm">BTC/USDT</p>
         <ArrowD />
