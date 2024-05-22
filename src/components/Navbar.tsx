@@ -9,7 +9,7 @@ import Logout from "@/assets/svg/Logout";
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex justify-between px-[30px]">
         <div className="flex items-center text-center gap-[40px] ">
           <div>
             <Logo />

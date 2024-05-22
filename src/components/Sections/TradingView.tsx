@@ -13,7 +13,7 @@ export default function TradingView() {
     <main>
       <div className="flex items-center justify-between px-[15px] py-[25px]   ">
         <div className="flex items-center">
-          <div className="flex gap-[15px] ">
+          <div className="flex cursor-pointer gap-[15px] ">
             {TimeTray.map((value) => (
               <div
                 onClick={() => {
@@ -21,7 +21,7 @@ export default function TradingView() {
                 }}
                 className={`h-[28px] w-[40px] py-[6px] px-[12px] rounded-[100px] ${
                   time === value.key && "bg-[#555C63]"
-                } hover:bg-[#555C6330] transition-all duration-300 ease-in-out items-center justify-center flex `}
+                }   items-center justify-center flex `}
                 key={value.key}
               >
                 {value.time}
@@ -45,6 +45,7 @@ export default function TradingView() {
         <Expand />
       </div>
       <div className="bg-[#32383F95] h-[1px] w-[100%] mt-[5x] mb-[10px]" />
+      <div></div>
     </main>
   );
 }
