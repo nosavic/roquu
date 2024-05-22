@@ -5,6 +5,7 @@ import Redo from "@/assets/svg/Redo";
 import Undo from "@/assets/svg/Undo";
 import React, { useState } from "react";
 import ApexCharts from "apexcharts";
+import CandlestickChart from "../Tools/CandlestickChart";
 
 export default function TradingView() {
   const [time, setTime] = useState<number>(1);
@@ -45,7 +46,9 @@ export default function TradingView() {
         <Expand />
       </div>
       <div className="bg-[#32383F95] h-[1px] w-[100%] mt-[5x] mb-[10px]" />
-      <div></div>
+      <div>
+        <CandlestickChart />
+      </div>
     </main>
   );
 }
