@@ -20,6 +20,7 @@ const config: Config = {
       desktop: { min: "1280px", max: "1535px" },
       // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
+      tablet2: { max: "870px" },
       wall2: { max: "1665px" },
       wall: { max: "1670px" },
       // => @media (min-width: 1536px) { ... }

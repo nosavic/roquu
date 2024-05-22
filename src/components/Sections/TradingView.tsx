@@ -11,10 +11,10 @@ export default function TradingView() {
   const [time, setTime] = useState<number>(1);
 
   return (
-    <main>
-      <div className="flex items-center justify-between px-[15px] py-[25px]   ">
+    <main className="">
+      <div className="flex overflow-x-scroll no-scrollbar items-center justify-between px-[15px] py-[25px]   ">
         <div className="flex items-center">
-          <div className="flex cursor-pointer gap-[15px] ">
+          <div className="flex cursor-pointer gap-[15px]  ">
             {TimeTray.map((value) => (
               <div
                 onClick={() => {
@@ -43,7 +43,9 @@ export default function TradingView() {
             <div className="w-[1px] h-[25px] items-start bg-[#A7B1BC20]" />
           </div>
         </div>
-        <Expand />
+        <div className="pl-[15px]">
+          <Expand />
+        </div>
       </div>
       <div className="bg-[#32383F95] h-[1px] w-[100%] mt-[5x] mb-[10px]" />
       <div>
